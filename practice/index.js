@@ -214,18 +214,24 @@
 
 // playGame();
 
-let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"];
-let appleShelf = document.getElementById("apple-shelf");
-let orangeShelf = document.getElementById("orange-shelf");
+// let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"];
+// let appleShelf = document.getElementById("apple-shelf");
+// let orangeShelf = document.getElementById("orange-shelf");
 
-function fruitSorter() {
-  for (let i = 0; i < fruit.length; i++) {
-    if (fruit[i] === "🍎") {
-      appleShelf.textContent += fruit[i] + " ";
-    } else {
-      orangeShelf.textContent += fruit[i] + " ";
-    }
-  }
-}
+// function fruitSorter() {
+//   for (let i = 0; i < fruit.length; i++) {
+//     if (fruit[i] === "🍎") {
+//       appleShelf.textContent += fruit[i] + " ";
+//     } else {
+//       orangeShelf.textContent += fruit[i] + " ";
+//     }
+//   }
+// }
 
-fruitSorter();
+// fruitSorter();
+
+const clickBox = document.getElementById("box");
+
+clickBox.addEventListener("click", function () {
+  console.log("I want to open the box!");
+});
