@@ -141,12 +141,91 @@
 //   console.log("Hey, check out this new film we think you will like!");
 // }
 
-let castle = {
-  title: "Live like a queen in my castle",
-  price: 190,
-  isPopular: true,
-  nearbyLandmarks: ["the moors", "historic art museum", "awesome beach"],
-};
+// let castle = {
+//   title: "Live like a queen in my castle",
+//   price: 190,
+//   isPopular: true,
+//   nearbyLandmarks: ["the moors", "historic art museum", "awesome beach"],
+// };
 
-console.log(castle.isPopular);
-console.log(castle.nearbyLandmarks);
+// console.log(castle.isPopular);
+// console.log(castle.nearbyLandmarks);
+
+// const person = {
+//   name: "Erin",
+//   age: 35,
+//   country: "America",
+// };
+
+// function logData() {
+//   console.log(
+//     `${person.name} is ${person.age} years old and lives in ${person.country}`
+//   );
+// }
+
+// logData();
+
+// const age = 66.5;
+
+// if (age < 6) {
+//   console.log("free");
+// } else if (age < 18) {
+//   console.log("child discount");
+// } else if (age < 27) {
+//   console.log("student discount");
+// } else if (age < 67) {
+//   console.log("full price");
+// } else {
+//   console.log("senior discount");
+// }
+
+// let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"];
+
+// console.log("The 5 largest countries in the world:");
+// for (let i = 0; i < largeCountries.length; i++) {
+//   console.log("- " + largeCountries[i]);
+// }
+
+// let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+
+// largeCountries.pop();
+// console.log(largeCountries);
+// largeCountries.push("Pakistan");
+// console.log(largeCountries);
+// largeCountries.shift();
+// console.log(largeCountries);
+// largeCountries.unshift("China");
+// console.log(largeCountries);
+
+// let dayofMonth = 13;
+// let weekDay = "Monday";
+
+// if (dayofMonth === 13 && weekDay === "Friday") {
+//   console.log("😱");
+// } else {
+//   console.log("😃");
+// }
+
+// const hands = ["rock", "paper", "scissors"];
+
+// function playGame() {
+//   console.log(hands[Math.floor(Math.random() * 3)]);
+// }
+
+// playGame();
+
+let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"];
+let appleShelf = document.getElementById("apple-shelf");
+let orangeShelf = document.getElementById("orange-shelf");
+
+function fruitSorter() {
+  for (let i = 0; i < fruit.length; i++) {
+    if (fruit[i] === "🍎") {
+      appleShelf.textContent += fruit[i] + " ";
+    } else {
+      orangeShelf.textContent += fruit[i] + " ";
+    }
+  }
+}
+
+fruitSorter();
