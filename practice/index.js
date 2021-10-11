@@ -25,8 +25,8 @@
 // }
 
 // let featuredPosts = [
-//     "Check out my Netflix clone", 
-//     "Here's the code for my project", 
+//     "Check out my Netflix clone",
+//     "Here's the code for my project",
 //     "I've just relaunched my portfolio"
 // ]
 
@@ -71,11 +71,82 @@
 //         console.log(cards[i])
 //     }
 
+// let sentence = ["Hello", "my", "name", "is", "Erin"]
+// let greetingEl = document.getElementById("greeting-el")
 
+// for (let i = 0; i < sentence.length; i++) {
+//     greetingEl.textContent += sentence[i] + " "
+// }
 
-let sentence = ["Hello", "my", "name", "is", "Erin"]
-let greetingEl = document.getElementById("greeting-el")
+// let player1Time = 102
+// let player2Time = 107
 
-for (let i = 0; i < sentence.length; i++) {
-    greetingEl.textContent += sentence[i] + " "
-}
+// function getFastestRaceTime() {
+//     if (player1Time < player2Time) {
+//         return player1Time
+//     } else if (player2Time < player1Time) {
+//         return player2Time
+//     } else {
+//         return player1Time
+//     }
+// }
+
+// let fastestRace = getFastestRaceTime()
+// console.log(fastestRace)
+
+// function getTotalRaceTime() {
+//     return player1Time + player2Time
+// }
+
+// let totalRaceTime = getTotalRaceTime()
+// console.log(totalRaceTime)
+
+// function rollDice() {
+//     let randomNumber = Math.floor(Math.random() * 6) + 1
+//     return randomNumber
+// }
+
+// console.log(rollDice())
+
+// let hasCompletedCourse = true;
+// let givesCertificate = true;
+
+// if (hasCompletedCourse === true && givesCertificate === true) {
+//   generateCertificate();
+// }
+
+// function generateCertificate() {
+//   console.log("Generating certificate...");
+// }
+
+// let hasSolvedChallenge = false;
+// let hasHintsLeft = false;
+
+// if (!hasSolvedChallenge && !hasHintsLeft) {
+//   showSolution();
+// }
+
+// function showSolution() {
+//   console.log("Showing the solution...");
+// }
+
+// let likesDocumentaries = false;
+// let likesStartups = true;
+
+// if (likesDocumentaries || likesStartups) {
+//   recommendMovie();
+// }
+
+// function recommendMovie() {
+//   console.log("Hey, check out this new film we think you will like!");
+// }
+
+let castle = {
+  title: "Live like a queen in my castle",
+  price: 190,
+  isPopular: true,
+  nearbyLandmarks: ["the moors", "historic art museum", "awesome beach"],
+};
+
+console.log(castle.isPopular);
+console.log(castle.nearbyLandmarks);
