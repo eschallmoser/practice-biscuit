@@ -243,13 +243,35 @@
 //   container.innerHTML += "<p>Thank you for buying!</p>";
 // }
 
-const recipient = "James";
-const sender = "Erin";
+// const recipient = "James";
+// const sender = "Erin";
 
-const email = `
-Hey ${recipient}! 
-How is it going? 
-Cheers ${sender}
-`;
+// const email = `
+// Hey ${recipient}!
+// How is it going?
+// Cheers ${sender}
+// `;
 
-console.log(email);
+// console.log(email);
+
+// const welcomeEl = document.getElementById("welcome-el");
+
+// function greetUser(greeting, name, emoji) {
+//   welcomeEl.textContent = `${greeting}, ${name} ${emoji}`;
+// }
+
+// greetUser("Howdy there", "Erin", "😎");
+
+// function add(num1, num2) {
+//   return num1 + num2;
+// }
+
+// console.log(add(3, 4));
+// console.log(add(9, 102));
+
+function getFirst(arr) {
+  return arr[0];
+}
+
+console.log(getFirst([6, 9, 0, -2]));
+console.log(getFirst([10, 10, 11]));
