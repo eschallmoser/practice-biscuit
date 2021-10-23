@@ -326,23 +326,37 @@
 
 // greetUser("Howdy there", "Erin", "😎");
 
-function generateSentence(desc, arr) {
-  let baseString = `The ${arr.length} ${desc} are `;
-  const lastIndex = arr.length - 1;
-  for (let i = 0; i < arr.length; i++) {
-    if (i === lastIndex) {
-      baseString += arr[i] + ".";
-    } else {
-      baseString += arr[i] + ", ";
-    }
+// function generateSentence(desc, arr) {
+//   let baseString = `The ${arr.length} ${desc} are `;
+//   const lastIndex = arr.length - 1;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (i === lastIndex) {
+//       baseString += arr[i] + ".";
+//     } else {
+//       baseString += arr[i] + ", ";
+//     }
+//   }
+//   return baseString;
+// }
+
+// const sentence = generateSentence("best songs off Noah Gundersen's new album", [
+//   "Exit Signs",
+//   "Body",
+//   "The Coast",
+// ]);
+
+// console.log(sentence);
+
+const imgs = ["images/forest1.jpg", "images/forest2.jpg", "images/forest3.jpg"];
+
+const container = document.getElementById("container");
+
+function renderImages() {
+  let imgsDOM = "";
+  for (let i = 0; i < imgs.length; i++) {
+    imgsDOM += `<img alt="featured forest" class="team-img" src="${imgs[i]}">`;
   }
-  return baseString;
+  container.innerHTML = imgsDOM;
 }
 
-const sentence = generateSentence("best songs off Noah Gundersen's new album", [
-  "Exit Signs",
-  "Body",
-  "The Coast",
-]);
-
-console.log(sentence);
+renderImages();
